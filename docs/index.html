@@ -1,33 +1,53 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>불편이즘 상품 모음</title>
-<meta name="description" content="불편이즘 쇼츠에 나온 상품을 모아 둔 페이지예요.">
+<title>줍줍이 장바구니 · @jubjub_pick</title>
+<meta name="description" content="줍줍이 쇼츠에 나온 상품을 영상 번호로 찾아보세요.">
 <style>
 :root{--p:#ff8fab;--bg:#fff7f0;--ink:#3b2f2f}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink)}
-.disc{position:sticky;top:0;z-index:9;background:#3b2f2f;color:#fff;font-size:13px;line-height:1.45;padding:9px 14px;text-align:center;font-weight:600}
-header{text-align:center;padding:22px 16px 6px}header h1{margin:8px 0 2px;font-size:24px}header p{margin:0;color:#8a7272}
-.search{max-width:480px;margin:16px auto;padding:0 16px}
-.search input{width:100%;font-size:18px;padding:12px 16px;border:3px solid var(--p);border-radius:18px;outline:none}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink)}
+.disc{background:#3b2f2f;color:#fff;font-size:13px;line-height:1.5;padding:10px 14px;text-align:center;font-weight:600}
+header{text-align:center;padding:22px 16px 6px}
+header img{width:96px;height:96px;border-radius:50%;border:4px solid var(--p);background:#fff;object-fit:cover}
+header h1{margin:8px 0 2px;font-size:24px}
+header p{margin:0;color:#8a7272}
+header .yt{margin-top:8px}
+header .yt a{color:#c0392b;font-weight:700;text-decoration:none}
+.search{max-width:480px;margin:16px auto;padding:0 16px;display:flex;gap:8px}
+.search input{flex:1;min-width:0;font-size:22px;padding:14px 16px;border:3px solid var(--p);border-radius:18px;outline:none;text-align:center}
+.search button{font-size:18px;padding:0 18px;border:0;border-radius:18px;background:var(--p);color:#fff;font-weight:700}
+#msg{text-align:center;color:#c0392b;min-height:20px;font-size:14px}
 main{max-width:520px;margin:0 auto;padding:0 12px 40px}
-.ser{background:#fff;border-radius:22px;padding:14px;margin:14px 0;box-shadow:0 3px 0 #f3d9cf}
-.ser h2{font-size:18px;margin:4px 0 6px;color:var(--p)}
-ul{list-style:none;margin:0;padding:0}.item{display:flex;gap:10px;align-items:center;padding:10px 0;border-top:1px dashed #f0d6cc}
-.no{font-size:22px;color:var(--p);font-weight:800;min-width:26px}
-.txt{flex:1;display:flex;flex-direction:column;gap:3px}.txt small{color:#8a7272}
+.ep{background:#fff;border-radius:22px;padding:14px;margin:14px 0;box-shadow:0 3px 0 #f3d9cf;scroll-margin-top:16px}
+.ep.hit{outline:4px solid var(--p)}
+.eph{display:flex;gap:8px;align-items:center}
+.tag{background:var(--p);color:#fff;font-weight:800;border-radius:12px;padding:3px 10px}
+.ser{font-size:13px;color:#8a7272}
+.ep h2{font-size:17px;margin:8px 0}
+ul{list-style:none;margin:0;padding:0}
+.item{display:flex;gap:10px;align-items:center;padding:10px 0;border-top:1px dashed #f0d6cc}
+.no{font-size:24px;color:var(--p);font-weight:800;min-width:28px}
+.txt{flex:1;display:flex;flex-direction:column;gap:3px}
+.txt small{color:#8a7272}
 .btn{align-self:flex-start;background:#ff6b6b;color:#fff;text-decoration:none;font-weight:700;padding:7px 12px;border-radius:12px;font-size:14px}
-.btn.off{background:#ccc}footer{text-align:center;font-size:12px;color:#a08b8b;padding:20px}
+.btn.off{background:#ccc}
+footer{text-align:center;font-size:12px;color:#a08b8b;padding:20px}
+footer .fd{display:block;color:#3b2f2f;font-weight:600;margin-top:8px}
 </style></head><body>
-<div class="disc">📢 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
-<header><h1>불편이즘 상품 모음</h1><p>쇼츠에 나온 상품을 모아 둔 페이지예요</p></header>
-<div class="search"><input id="q" type="search" placeholder="상품 이름으로 찾기 (예: 랩)" autocomplete="off"></div>
-<main><section class="ser"><h2>못난이</h2><ul><li class="item" data-q="파지 김 1kg 못난이 김 재래김 생김"><span class="no">①</span><div class="txt"><b>파지 김 1kg 못난이 김 재래김 생김</b><small>1kg 대용량</small><span class="btn off">링크 준비중</span></div></li><li class="item" data-q="영주마실 못난이 사과 소과 23~30개입 4.5kg 1박스"><span class="no">②</span><div class="txt"><b>영주마실 못난이 사과 소과 23~30개입 4.5kg 1박스</b><small>4.5kg · 소과 23~30개입</small><span class="btn off">링크 준비중</span></div></li><li class="item" data-q="[건어물민족] 진미채 중가루 파지 떡가루 1kg"><span class="no">③</span><div class="txt"><b>[건어물민족] 진미채 중가루 파지 떡가루 1kg</b><small>1kg 대용량</small><span class="btn off">링크 준비중</span></div></li></ul></section><section class="ser"><h2>업소용</h2><ul><li class="item" data-q="ezn이지엔 슬라이드 커팅 업소용 랩 프로플러스 30cm×500m"><span class="no">①</span><div class="txt"><b>EZn이지엔 슬라이드 커팅 업소용 랩 프로플러스 30cm×500m</b><small>30cm × 500m · 슬라이딩 커터</small><span class="btn off">링크 준비중</span></div></li><li class="item" data-q="밀짚 키친타월 점보롤 487매"><span class="no">②</span><div class="txt"><b>밀짚 키친타월 점보롤 487매</b><small>점보롤 · 487매</small><span class="btn off">링크 준비중</span></div></li><li class="item" data-q="코튼클라우드 호텔수건 200g 40수 코마사 화이트 10개"><span class="no">③</span><div class="txt"><b>코튼클라우드 호텔수건 200g 40수 코마사 화이트 10개</b><small>200g · 40수 코마사 · 10개입</small><span class="btn off">링크 준비중</span></div></li></ul></section><section class="ser"><h2>자취냥</h2><ul><li class="item" data-q="eyimtech 스테인리스 싱크대 정리 선반 확장형 주방선반"><span class="no">①</span><div class="txt"><b>Eyimtech 스테인리스 싱크대 정리 선반 확장형 주방선반</b><small>2단 · 폭 조절(확장형) · 스테인리스</small><span class="btn off">링크 준비중</span></div></li><li class="item" data-q="스테인리스 다용도 냄비뚜껑 정리대 싱크대 주방수납"><span class="no">②</span><div class="txt"><b>스테인리스 다용도 냄비뚜껑 정리대 싱크대 주방수납</b><small>스테인리스 소재</small><span class="btn off">링크 준비중</span></div></li><li class="item" data-q="코멧 냉장고 자석 다용도 선반"><span class="no">③</span><div class="txt"><b>코멧 냉장고 자석 다용도 선반</b><small>철재 · 24×10×8cm · 블랙</small><span class="btn off">링크 준비중</span></div></li></ul></section></main>
-<footer>가격과 재고는 쿠팡 페이지에서 확인해 주세요.<br>📢 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</footer>
+<div class="disc">[광고] 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.<br>영상 속 캐릭터(줍줍이)와 사용 장면은 연출이며, 실제 사용 후기가 아닙니다. 가격은 확인일 기준이며 변동될 수 있습니다.</div>
+<header><img src="img/profile.png" alt="줍줍이"><h1>줍줍이 장바구니 🐾</h1><p>@jubjub_pick · 쇼츠에 나온 상품 모음</p><p class="yt"><a href="https://www.youtube.com/@jjajeungnyang" target="_blank" rel="noopener">▶ 짜증냥 쇼츠 보러가기</a></p></header>
+<form class="search" onsubmit="go();return false"><input id="q" type="number" inputmode="numeric" placeholder="영상 번호 입력 (예: 8)"><button>찾기</button></form>
+<div id="msg"></div>
+<main><section class="ep" id="ep8"><div class="eph"><span class="tag">#8</span><span class="ser">겨울 짜증</span></div><h2>겨울 짜증, 이 틈부터 신경 쓰이네</h2><ul><li class="item"><span class="no">①</span><div class="txt"><b>코멧 문풍지</b><small>틈새에 붙이는 문풍지 · 옵션·구성은 쿠팡에서 확인</small><a class="btn" href="https://link.coupang.com/a/ivautofBD2" target="_blank" rel="sponsored noopener">쿠팡에서 보기 ›</a></div></li><li class="item"><span class="no">②</span><div class="txt"><b>이지쿠커 붕어빵팬</b><small>알루미늄 논스틱 · 붕어빵 모양 틀</small><a class="btn" href="https://link.coupang.com/a/ivythFHoLk" target="_blank" rel="sponsored noopener">쿠팡에서 보기 ›</a></div></li><li class="item"><span class="no">③</span><div class="txt"><b>이지뷰 김서림방지 안경닦이</b><small>옵션·구성은 쿠팡 상세페이지에서 확인</small><a class="btn" href="https://link.coupang.com/a/ivDEiPzNtc" target="_blank" rel="sponsored noopener">쿠팡에서 보기 ›</a></div></li></ul></section></main>
+<footer>가격·재고는 쿠팡 페이지에서 확인해 주세요. 상품 번호(①②③)는 영상 속 번호와 같아요.<span class="fd">[광고] 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.<br>영상 속 캐릭터(줍줍이)와 사용 장면은 연출이며, 실제 사용 후기가 아닙니다. 가격은 확인일 기준이며 변동될 수 있습니다.</span></footer>
 <script>
-document.getElementById('q').addEventListener('input', function (e) {
-  var q = e.target.value.trim().toLowerCase();
-  document.querySelectorAll('.item').forEach(function (li) {
-    li.style.display = (!q || li.dataset.q.indexOf(q) !== -1) ? '' : 'none';
-  });
-});
+function go(n){
+  n = n || document.getElementById('q').value.trim();
+  var el = document.getElementById('ep' + n), m = document.getElementById('msg');
+  document.querySelectorAll('.ep.hit').forEach(function (e) { e.classList.remove('hit'); });
+  if (!el) { m.textContent = n ? '#' + n + ' 영상은 아직 없어요냥 😿' : ''; return; }
+  m.textContent = ''; el.classList.add('hit'); el.scrollIntoView({behavior: 'smooth'});
+  history.replaceState(null, '', '#' + n);
+}
+var hs = location.hash.replace(/\D/g, ''); if (hs) go(hs);
 </script></body></html>
